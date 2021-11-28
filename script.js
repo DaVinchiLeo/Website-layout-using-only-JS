@@ -21,16 +21,21 @@ let arrayLinks = [
   { name: "YouTybe", myhref: "http://youtybe.com" },
   { name: "Goodfon", myhref: "http://goodfon.ru" },
 ];
-
+/*
 for (let i = 0; i < arrayLinks.length; i++) {
   linkText = arrayLinks[i].name;
   linkHref = arrayLinks[i].myhref;
 
-let li = document.createElement("li");
-li.innerText = linkText;
-li.href = linkHref;
+  let li = document.createElement("li");
+  li.innerText = linkText;
+  li.href = linkHref;
 
-ul.append(li);
+  ul.append(li);
+}*/
+for (let i = 0; i < arrayLinks.length; i++) {
+  let li = document.createElement("li");
+  li.innerText = arrayLinks[i].name;
+  li.href = arrayLinks[i].myhref;
+
+  ul.append(li);
 }
-
-
