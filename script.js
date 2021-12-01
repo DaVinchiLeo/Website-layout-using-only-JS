@@ -24,6 +24,7 @@ let arrayLinks = [
   { name: "VK", myhref: "http://Vkontakte.ru" },
   { name: "YouTybe", myhref: "http://youtybe.com" },
   { name: "Goodfon", myhref: "http://goodfon.ru" },
+  { name: "YouTybe", myhref: "http://youtybe.com" },
 ];
 
 for (let i = 0; i < arrayLinks.length; i++) {
