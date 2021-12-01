@@ -3,12 +3,27 @@
   font-size: 50px;
 }
 .class2 {
-  color: rgb(255, 238, 0);
-  font-size: 50px;
+  color: #00ccff;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 220px;
 }
-
-.class3 {
-  font-size: 25px;
+nav {
+  min-width:1440px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(7, 9, 95);
 }
-ul#proList{list-style-position: inside}
-   li.item{list-style:none; padding:5px;}
+ul{
+  width: 250px;
+}
+li {
+  list-style: none;
+  font-family: "Nunito";
+  font-size: 24px;
+  font-style: oblique;
+  font-weight: 600;
+  line-height: 32px;
+}
