@@ -6,7 +6,47 @@ footer > nav > ul > li;
 Можно использовать классы либо inline-css в js. Работа по парам, пары разбиты были на занятиях. 
 Для тех кого не было : у вас в паре человек который был на занятии, он должен вам написать. 
 Если есть вопросы пишите*/
+//---------------------------------------------------------------HEADER------------------------------------------------------------------------------------
+let header = document.createElement("header");
+header.className = "header_class";
+document.body.append(header);
 
+let nav_header = document.createElement("nav");
+nav_header.className = "header_nav";
+header.append(nav_header);
+
+let ul_header1 = document.createElement("ul");
+ul_header1.className = "header_ul";
+nav_header.append(ul_header1);
+
+let ul_header2 = document.createElement("ul");
+ul_header2.className = "header_ul";
+nav_header.append(ul_header2);
+
+
+
+let array_of_Links = [
+    { name: "Google", myhref: "http://google.com" },
+    { name: "Goodfon", myhref: "http://goodfon.ru" },
+    { name: "VK", myhref: "http://Vkontakte.ru" },
+    { name: "YouTybe", myhref: "http://youtube.com" },
+    { name: "Goodfon", myhref: "http://goodfon.ru" },
+    { name: "YouTybe", myhref: "http://youtube.com" },
+];
+
+for (let i = 0; i < array_of_Links.length; i++) {
+    let li = document.createElement("li");
+    li.className = "header_li";
+    let a = document.createElement("a");
+    li.append(a);
+    a.innerText = array_of_Links[i].name;
+    a.href = array_of_Links[i].myhref;
+    ul_header2.append(li);
+}
+
+
+
+//---------------------------------------------------------------FOOTER------------------------------------------------------------------------------------
 let footer = document.createElement("footer");
 footer.className = "class2";
 document.body.append(footer);

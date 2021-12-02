@@ -6,17 +6,20 @@
   color: #00ccff;
   letter-spacing: 0em;
   text-align: left;
-  width: 220px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 nav {
-  min-width:1440px;
+  min-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   background-color: rgb(7, 9, 95);
 }
-ul{
+ul {
   width: 250px;
 }
 li {
@@ -26,4 +29,25 @@ li {
   font-style: oblique;
   font-weight: 600;
   line-height: 32px;
+}
+.header_class {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header_nav {
+  background-color: rgb(228, 108, 28);
+}
+
+.header_ul {
+  width: 200px;
+}
+
+.header_li {
+  color: #000000;
+  list-style: none;
+  font-size: 26px;
+  font-weight: 200;
+  line-height: 24px;
 }
